@@ -4,3 +4,10 @@
  * Create a default constructor that sets the fields to O and + and an overloaded constructor that requires values for both fields. 
  * Include get and set methods for each field. Save this file as BloodData.java.
  */
+
+ public class BloodData {
+    private String bloodType;
+    private String rhFactor;
+
+    
+ }
