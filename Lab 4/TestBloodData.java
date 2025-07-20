@@ -25,7 +25,7 @@ public class TestBloodData {
 
         // Create second BloodData object with user input
         BloodData userBloodData = new BloodData(bloodType, rhFactor);
-        System.out.println("User Blood Data: " + userBloodData);
+        System.out.println("\nUser Blood Data: " + userBloodData);
 
         // Change the default object to use user's values
         defaultBloodData.setBloodType(bloodType);

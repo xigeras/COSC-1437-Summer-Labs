@@ -22,11 +22,11 @@ public class Patient {
         this.bloodData = bloodData;
     }
 
-    public getIdNumber() {
+    public int getIdNumber() {
         return idNumber;
     }
 
-    public getAge() {
+    public int getAge() {
         return age;
     }
 
@@ -50,5 +50,6 @@ public class Patient {
     public String toString() {
         return "Patient ID: " + idNumber +
                 ", Age: " + age +
-                ", Blood Data: " + bloodData;    
+                ", Blood Data: " + bloodData;
+    }
 }

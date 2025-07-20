@@ -15,17 +15,17 @@
    }
    
    //overloaded constructor
-   public BloodData(String bloodType, string rhFactor) {
+   public BloodData(String bloodType, String rhFactor) {
       this.bloodType = bloodType;
       this.rhFactor = rhFactor;
    }
 
    //getters
-   public static getType(String bloodType) {
+   public String getType() {
       return bloodType;
    }
 
-   public static getFactor(String rhFactor) {
+   public String getFactor() {
       return rhFactor;
    }
 
@@ -39,6 +39,7 @@
    }
    @Override
    public String toString() {
-      return "Blood Type: " + bloodType + "\nrH Factor: " + rhFactor;
+      return "\nBlood Type: " + bloodType + ", rH Factor: " + rhFactor;
    }
  }
+
