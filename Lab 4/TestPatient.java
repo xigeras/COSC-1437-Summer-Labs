@@ -20,7 +20,7 @@ public class TestPatient {
         int idNumber = scanner.nextInt();
         System.out.print("Enter Age: ");
         int age = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
         System.out.print("Enter Blood Type (O, A, B, AB): ");
         String bloodType = scanner.nextLine().toUpperCase();
         System.out.print("Enter Rh Factor (+ or -): ");
