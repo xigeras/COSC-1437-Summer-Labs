@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /*
  * Write a program for Horizon Phones, a provider of cellular phone service. 
  * Prompt a user for maximum monthly values for talk minutes needed, text messages needed, and 
@@ -11,4 +13,40 @@
  * Save the file as CellPhoneService.java.
  */
 
- 
+
+public class CellPhoneService {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Maximum monthly values for talk minutes needed?");
+        int minutes = scanner.nextInt();
+
+        System.out.println("Maximum monthly values for text messages needed?");
+        int texts = scanner.nextInt();
+
+        System.out.println("Maximum monthly values for gigabytes of data needed?");
+        double data = scanner.nextDouble();
+
+
+        if (data > 0) {
+            if (data <= 3) {
+                System.out.println("You should buy Plan E for up to 3 gigabytes at $79 per month!");
+            } else {
+                System.out.println("You should buy Plan F for 3 gigabytes or more at $87 per month!");
+            }
+        } else if (minutes < 500) {
+            if (texts == 0) {
+                System.out.println("You should buy Plan A at $49 per month!");
+            } else {
+                System.out.println("You should buy Plan B at $55 per month!");
+            }
+        } else {
+            if (texts <= 100) {
+                System.out.println("You should buy Plan C at $61 per month for up to 100 text messages!");
+            } else {
+                System.out.println("You should buy Plan D at $70 per month for 100 or more text messages!");
+            }
+        }
+        scanner.close();
+    }
+}
